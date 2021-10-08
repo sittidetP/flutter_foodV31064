@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_food/pages/food/food_detail_page.dart';
 import 'package:flutter_food/pages/home/home_page.dart';
 import 'package:flutter_food/pages/login/login_page.dart';
 
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: Colors.purple,
+        primarySwatch: Colors.blue,
         textTheme: const TextTheme(
           headline1: TextStyle(
             fontSize: 30.0,
@@ -34,6 +35,7 @@ class MyApp extends StatelessWidget {
       routes: {
         LoginPage.routeName: (context) => const LoginPage(),
         HomePage.routeName: (context) => const HomePage(),
+        FoodDetailPage.routeName : (context) => const FoodDetailPage(),
       },
       initialRoute: LoginPage.routeName,
     );
